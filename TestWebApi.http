@@ -10,3 +10,6 @@ Accept: application/json
 
 GET {{TestWebApi_HostAddress}}/test/ping1000
 Accept: application/json
+###
+GET {{TestWebApi_HostAddress}}/test/ping2000
+Accept: application/json

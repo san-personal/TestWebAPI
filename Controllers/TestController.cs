@@ -45,4 +45,17 @@ public class TestController(ILogger<TestController> logger) : ControllerBase
         };
         return Ok(result);
     }
+    
+    [HttpGet("ping2000")]
+    public async Task<IActionResult> GetPing2000()
+    {
+        var requestReceived = DateTime.Now;
+        await Task.Delay(2000);
+        var result = new
+        {
+            ReceivedAt = requestReceived,
+            ProcessedAfter = (DateTime.Now - requestReceived).TotalSeconds
+        };
+        return Ok(result);
+    }
 }

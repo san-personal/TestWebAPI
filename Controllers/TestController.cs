@@ -8,7 +8,7 @@ public class TestController(ILogger<TestController> logger) : ControllerBase
 {
     
     [HttpGet("ping50")]
-    public async Task<IActionResult> GetPing1()
+    public async Task<IActionResult> GetPing50()
     {
         var requestReceived = DateTime.Now;
         await Task.Delay(50);
@@ -21,7 +21,7 @@ public class TestController(ILogger<TestController> logger) : ControllerBase
     }
 
     [HttpGet("ping300")]
-    public async Task<IActionResult> GetPing2()
+    public async Task<IActionResult> GetPing300()
     {
         var requestReceived = DateTime.Now;
         await Task.Delay(300);
@@ -34,7 +34,7 @@ public class TestController(ILogger<TestController> logger) : ControllerBase
     }
 
     [HttpGet("ping1000")]
-    public async Task<IActionResult> GetPing3()
+    public async Task<IActionResult> GetPing1000()
     {
         var requestReceived = DateTime.Now;
         await Task.Delay(1000);

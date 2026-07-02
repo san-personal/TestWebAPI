@@ -1,0 +1,17 @@
+# Build output (Debug/Release)
+[Bb]in/
+[Oo]bj/
+
+# .NET / MSBuild
+*.user
+project.lock.json
+artifacts/
+
+# Visual Studio
+.vs/
+
+# Rider / JetBrains
+.idea/
+
+# Local user secrets / env
+*.env

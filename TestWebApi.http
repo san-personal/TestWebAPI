@@ -1,6 +1,12 @@
 @TestWebApi_HostAddress = http://localhost:5111
 
-GET {{TestWebApi_HostAddress}}/test/
+GET {{TestWebApi_HostAddress}}/test/ping50
 Accept: application/json
-
 ###
+
+GET {{TestWebApi_HostAddress}}/test/ping300
+Accept: application/json
+###
+
+GET {{TestWebApi_HostAddress}}/test/ping1000
+Accept: application/json
